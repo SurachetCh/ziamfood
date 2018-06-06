@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main_app">
+
+    <LinearLayout
+        android:id="@+id/title_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_shop_image"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:background="@color/white">-->
+        <!--</LinearLayout>-->
+        <!--</HorizontalScrollView>-->
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:flipInterval="2000"
+            android:autoStart="true"/>
+
+        <LinearLayout
+            android:paddingTop="1dp"
+            android:paddingBottom="0.5dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <ImageView
+                android:id="@+id/img_category1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/c1"
+                android:scaleType="fitXY"/>
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/img_category2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/c2"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="0.5dp"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/img_category3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/c3"
+                android:scaleType="fitXY"/>
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/img_category4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/c4"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/last_review_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <ImageView
+            android:id="@+id/imgLoad"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+       <Button
+           android:id="@+id/btnDeal"
+           android:background="@color/colorPrimary"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="50dp"
+           android:text="@string/deal"
+           android:textColor="@color/white"
+           android:textSize="15dp"/>
+
+        <ImageView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_white"/>
+
+        <Button
+            android:id="@+id/btnNearBy"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/near_by"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</LinearLayout>

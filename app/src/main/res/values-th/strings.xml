@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Ziam Food</string>
+
+    <string name="home">หน้าแรก</string>
+    <string name="deal">โปรโมชั่น</string>
+    <string name="near_by">ใกล้เคียง</string>
+    <string name="user_profile">ข้อมูลผู้ใช้</string>
+    <string name="contact">ติดต่อ</string>
+    <string name="newsfeed">ฟีดข่าว</string>
+    <string name="review">รีวิว</string>
+    <string name="blog">บล๊อก</string>
+    <string name="post">โพสต์</string>
+
+    <string name="menu">รายการ</string>
+    <string name="setting">ตั้งค่า</string>
+    <string name="recommend_shop">ร้านค้าแนะนำ</string>
+    <string name="new_shop">ร้านค้าเปิดใหม่</string>
+    <string name="total">ทั้งหมด</string>
+
+    <string name="login">ลงชื่อเข้าใช้</string>
+    <string name="signin">ลงชื่อเข้าใช้</string>
+    <string name="logout">ลงชื่อออก</string>
+    <string name="username">ชื่อผู้ใช้</string>
+    <string name="email">อีเมลล์</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="confirm_password">ยืนยัน รหัสผ่าน</string>
+    <string name="firstname">ชื่อ</string>
+    <string name="lastname">นามสกุล</string>
+    <string name="new_user">ผู้ใช้ ใหม่</string>
+    <string name="register_now">สมัคร เลย</string>
+    <string name="forget_password">ลืมรหัส</string>
+    <string name="accept">ยอมรับ</string>
+    <string name="textRegister1">คุณยังไม่ลงทะเบียน ?</string>
+    <string name="textRegister2">สมัครที่นี่</string>
+    <string name="textfrogotpassword1">คุณลืมรหัส ?</string>
+    <string name="textfrogetpassword2">คลิกที่นี่</string>
+    <string name="term_and_conditions">เงื่อนไขและข้อกำหนด</string>
+    <string name="accept_term_and_conditions">ยอมรับเงื่อนไขและข้อกำหนด</string>
+    <string name="click">คลิก</string>
+
+    <string name="search">ค้นหา</string>
+
+    <string name="ok">ตกลง</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="open">เปิด</string>
+    <string name="close">ปิด</string>
+
+    <string name="call">โทร</string>
+    <string name="info">ข้อมูล</string>
+    <string name="online_order">สั่งอาหาร</string>
+
+    <string name="price">ราคา</string>
+    <string name="qty">จำนวน</string>
+    <string name="addition">เพิ่มเติม</string>
+    <string name="note">จดบันทึก</string>
+    <string name="add_to_cart">ใส่ตะกร้า</string>
+
+    <string name="name">ชื่อ</string>
+    <string name="phone">โทร</string>
+    <string name="address">ที่อยู่</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="data_deficient">เติม ชื่อ เบอร์โทรศัพท์ และ zipcode</string>
+
+    <string name="hours">เวลาเปิดทำการ</string>
+    <string name="write_review">เขียนรีวิว</string>
+    <string name="title">หัวข้อ</string>
+    <string name="description">รายละเอียด</string>
+    <string name="score">คะแนน</string>
+    <string name="reccomend_menu">เมนูแนะนำ</string>
+    <string name="upload_image">อัพโหลดรูป</string>
+    <string name="upload">อัพโหลด</string>
+    <string name="save">บันทึก</string>
+
+    <string name="review_detail">รายละเอียดรีวิว</string>
+    <string name="back">กลับ</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="user_profile_login_before">กรุณาเข้าสู่ระบบก่อนดูข้อมูลส่วนตัว</string>
+
+    <string name="text_delete_order">ข้อมูลการสั่งซื้อจะถูกลบออก</string>
+    <string name="please_login_user">กรุณาลงชื่อเข้าใช้?</string>
+    <string name="shop_close">ร้านปิด</string>
+    <string name="text_null_order">ไม่มีคำสั่งซื้อ</string>
+
+    <string name="status_connect">สถานะการเชื่อมต่อ</string>
+    <string name="disconnection">กรุณาเชื่อมต่อสัญญาณ Internet ก่อนการใช้งาน</string>
+
+    <string name="order_success">สั่งซื้อสำเร็จ</string>
+    <string name="order_fail">สั่งซื้อไม่สำเร็จ</string>
+
+    <string name="last_review">รีวิวล่าสุด</string>
+
+    <string name="male">ชาย</string>
+    <string name="female">หญิง</string>
+
+    <string name="read_more">อ่านต่อ</string>
+
+    <!--Write review page-->
+    <string name="title_null">กรุณากรอกข้อมูล(หัวข้อ)</string>
+    <string name="description_null">กรุณากรอกข้อมูล(รายละเอียด)</string>
+</resources>

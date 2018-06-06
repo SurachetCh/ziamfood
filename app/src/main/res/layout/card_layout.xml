@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_margin="1dp"
+    cardview:cardCornerRadius="10dp"
+    cardview:cardBackgroundColor="#fefefe"
+    cardview:cardElevation="2dp"
+    cardview:contentPadding="3dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/download"/>
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_icon"
+            android:layout_marginLeft="8dp"
+            android:text="title"
+            android:textColor="#333"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtTitle"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="0dp"
+            android:text="description"
+            android:textColor="#333"
+            android:textSize="13sp"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/txtLoc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtAddress"
+            android:layout_below="@+id/txtAddress"
+            android:layout_marginTop="0dp"
+            android:text="description"
+            android:textColor="#333"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

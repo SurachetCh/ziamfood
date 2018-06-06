@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3B5998</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#EF7D80</color>
+    <color name="black">#111111</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorgreen">#66CD00</color>
+    <color name="colorgreen2">#458B00</color>
+    <color name="colorgreen3">#055C34</color>
+    <color name="colorblue">#0066ab</color>
+    <color name="gray">#C8C8C8</color>
+    <color name="Gainsboro">#DCDCDC</color>
+    <color name="pink">#FF5C76</color>
+    <color name="pink1">#F07D80</color>
+    <color name="facebook">#416BC1</color>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+
+    <color name="blue">#0071BC</color>
+    <color name="red">#D60707</color>
+    <color name="yellow">#FFAA00</color>
+    <color name="gold">#FFD700</color>
+</resources>

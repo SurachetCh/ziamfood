@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    >
+
+    <!--<item android:title="เข้าใช้งาน">-->
+        <!--<menu>-->
+            <!--<group android:checkableBehavior="single">-->
+            <!--<item-->
+                <!--android:id="@+id/nav_login"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Login"/>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_logout"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Logout" />-->
+            <!--</group>-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <item android:title="@string/menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/home"
+                    android:title="@string/home"/>
+                <item
+                    android:id="@+id/nav_deal"
+                    android:icon="@drawable/deal"
+                    android:title="@string/deal" />
+                <item
+                    android:id="@+id/nav_nearby"
+                    android:icon="@drawable/nearby"
+                    android:title="@string/near_by" />
+                <item
+                    android:id="@+id/nav_newsfeed"
+                    android:icon="@drawable/newsfeed"
+                    android:title="@string/newsfeed" />
+                <item
+                    android:id="@+id/nav_review"
+                    android:icon="@drawable/review"
+                    android:title="@string/review" />
+                <item
+                    android:id="@+id/nav_blog"
+                    android:icon="@drawable/blog"
+                    android:title="@string/blog" />
+                <item
+                    android:id="@+id/nav_posts"
+                    android:icon="@drawable/post"
+                    android:title="@string/post" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/setting">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/user"
+                    android:title="@string/user_profile"/>
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/contact"
+                    android:title="@string/contact" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

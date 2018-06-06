@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_margin="1dp"
+    cardview:cardCornerRadius="10dp"
+    cardview:cardBackgroundColor="#fefefe"
+    cardview:cardElevation="2dp"
+    cardview:contentPadding="3dp">
+
+        <LinearLayout
+            android:id="@+id/news_feed_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <!--<cn.carbs.android.avatarimageview.library.AvatarImageView-->
+                    <!--android:id="@+id/imgUser"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:src="@drawable/male"-->
+                    <!--app:aiv_BoarderWidth="2dp"-->
+                    <!--app:aiv_ShowBoarder="false"-->
+                    <!--app:aiv_TextSizeRatio="0.4" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUser"
+                    android:padding="5dp"
+                    android:src="@drawable/male"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"
+                    style="@style/ImageUser"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvUser"
+                            android:paddingRight="8dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Display Name"
+                            android:textSize="14dp"
+                            android:textColor="@color/pink"
+                            android:singleLine="true"/>
+
+                        <LinearLayout
+                            android:id="@+id/grup_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/img_star1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/star"/>
+                            <ImageView
+                                android:id="@+id/img_star2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/star"/>
+
+                            <ImageView
+                                android:id="@+id/img_star3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/star" />
+
+                            <ImageView
+                                android:id="@+id/img_star4"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/star"/>
+                            <ImageView
+                                android:id="@+id/img_star5"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/star"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvPostdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:text="Create date"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:paddingTop="5dp"
+                            android:text="Dok Bua Thai kitchen"
+                            android:textColor="@color/blue"
+                            android:textSize="14dp"
+                            android:paddingLeft="8dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_blog_author"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_author_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/yellow"
+                            android:textSize="12dp"/>
+                        <TextView
+                            android:id="@+id/tv_author_domain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/facebook"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <ImageView
+                android:id="@+id/img_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDetail_Review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingTop="5dp"
+                    android:text="Dok Bua Thai kitchen"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/tvDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Content"
+                    android:textSize="12dp"
+                    android:singleLine="true"/>
+
+                <RelativeLayout
+                    android:id="@+id/rr_image_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_blog"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gray_blog">
+                <TextView
+                    android:id="@+id/tvTitleBlog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="title blog"
+                    android:textColor="@color/facebook"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/tvDetailBlog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="detail blog"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

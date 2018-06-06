@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_margin="1dp"
+    cardview:cardCornerRadius="10dp"
+    cardview:cardBackgroundColor="#fefefe"
+    cardview:cardElevation="8dp"
+    cardview:contentPadding="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_review"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<cn.carbs.android.avatarimageview.library.AvatarImageView-->
+                    <!--android:id="@+id/imgUser"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--app:aiv_BoarderWidth="2dp"-->
+                    <!--app:aiv_ShowBoarder="false"-->
+                    <!--app:aiv_TextSizeRatio="0.4"-->
+                    <!--android:src="@drawable/male"/>-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUser"
+                    android:padding="5dp"
+                    android:src="@drawable/male"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"
+                    style="@style/ImageUser"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingRight="8dp"
+                        android:id="@+id/tvUser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Display Name"
+                        android:textSize="18dp"
+                        android:textColor="@color/pink"
+                        android:singleLine="true"/>
+
+                        <ImageView
+                            android:id="@+id/img_star1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/star"/>
+                        <ImageView
+                            android:id="@+id/img_star2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/star"/>
+
+                        <ImageView
+                            android:id="@+id/img_star3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:id="@+id/img_star4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/star"/>
+                        <ImageView
+                            android:id="@+id/img_star5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/star"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvPostdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Create date"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="8dp"
+                            android:text="Dok Bua Thai kitchen"
+                            android:textSize="14dp"
+                            android:singleLine="true"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+            <TextView
+                android:id="@+id/tvDetail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvDetail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
